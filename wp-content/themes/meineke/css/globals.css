@@ -1,0 +1,153 @@
+/* ==========================================================================
+   Globals
+   ========================================================================== */
+
+/**
+ * This houses all the global css classes
+ */
+
+html, body {
+	height:100%;	
+	font-family: 'Raleway', sans-serif;
+}
+.wrap {
+	width:100%;
+	position:relative;
+	overflow:none;
+	padding:0% 1%;
+}
+.mobile-header,
+.mobile-logo,
+.mobile-nav {
+		display: none;
+}
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.divider {
+	clear:both;
+	height:15px;
+}
+
+.block {
+	display:block;
+}
+
+.none {
+	display:none;
+}
+
+.relative {
+	position:relative;
+}
+
+.no-right-margin {
+	margin-right:0px;
+}
+
+.no-top-margin {
+	margin-top:0px;
+}
+
+.no-top-pad {
+	padding-top:0px;
+}
+
+.top-20 {
+	margin-top: 20px;
+}
+
+.text-left {
+	text-align:left;
+}
+
+.text-right {
+	text-align:right;
+}
+
+.center {
+	text-align:center;
+}
+
+.bold {
+	font-weight:700;
+}
+
+.italic {
+	font-style:italic;
+}
+
+.red {
+	color:#ed1c24;
+}
+
+.lgt-blue {
+	color: #bbdeff;
+}
+
+.uppercase {
+	text-transform:uppercase;
+}
+
+.btn {
+	border-radius: 2px;
+	padding:17px 20px;
+	display: inline-block;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 17px;
+}
+.btn-small {
+	font-size: 16px;
+	font-weight: 500;
+}
+.btn-large {
+	font-size: 29px;
+	font-weight: 500;
+}
+a.btn {
+	text-decoration: none;
+	color: white;
+	opacity: 0.8;
+}
+a.btn:hover {
+	opacity: 0.9;
+}
+a.btn:active {
+	opacity: 1;
+}
+.btn-red {
+	background-color: #cc4a4f;
+}
+.btn-blue {
+	background-color: #09385f;
+}
+.btn-light-blue {
+	background-color: #4e9ee0;
+}
+
+.twenty{
+	width:20%;
+}
+.thirty{
+	width:30%;
+}
+.fourty9{
+	width: 49%;
+}
+.fifty{
+	width:50%;
+}
+.seventy{
+	width: 70%;
+}
+.seventy5{
+	width: 75%;
+}

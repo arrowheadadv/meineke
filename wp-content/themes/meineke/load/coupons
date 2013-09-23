@@ -1,0 +1,28 @@
+<?php wp_head();
+$id = $_GET[$id]; 
+$args = array(
+    'orderby' => 'title',
+    'order' => 'ASC',
+    'post_type'=>'coupons',
+    'cat'=>$id,
+    'tax_query' => array(
+            array(
+                'taxonomy' => 'coupons_category'
+            )
+        )
+    );
+$posts = query_posts($args);
+
+foreach ($posts as $post):
+$price = get_field('price_image');
+$print = get_field('print');
+$product = get_field('product_box_image');
+?>
+<div class="fourty9 left box">
+	<h1><?php the_title; ?></h1>
+	<p class="center"><img src="<?php echo $price; ?>" alt=""></p>
+	<?php the_content(); ?>
+	<p class="center"><a href="<?php echo $print; ?>">Print Coupon</a> <a href="#">More Details</a></p>
+	<p class="center"><img src="<?php echo $product; ?>" alt="Filter"></p>
+</div>
+<?php endforeach; ?>
